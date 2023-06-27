@@ -22,7 +22,7 @@ cd ~/work
 sudo apt install python3.10-venv
 python3 -m venv mlenv
 source mlenv/bin/activate
-pip install transformers 'transformers[torch]' einops
+pip install transformers 'transformers[torch]' einops sentencepiece protobuf torch
 python -c "from transformers import pipeline; print(pipeline('sentiment-analysis')('we love you'))"
 ls -al ~/.cache/huggingface/
 
