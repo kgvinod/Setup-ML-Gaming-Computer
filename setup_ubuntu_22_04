@@ -10,6 +10,10 @@ sudo apt install nvidia-cuda-toolkit nvidia-cuda-toolkit-gcc
 # Alternatively, install latest from Nvidia site:
 # https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 # https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
+# Nvidia install does not setup path, so add to .bashrc (replace correct CUDA version):
+#   export PATH="/usr/local/cuda-12.2/bin:$PATH"
+#   export LD_LIBRARY_PATH="/usr/local/cuda-12.2/lib64:$LD_LIBRARY_PATH"
+
 nvcc --version
 
 sudo apt-get install glmark2
