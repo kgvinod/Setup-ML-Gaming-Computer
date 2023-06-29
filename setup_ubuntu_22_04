@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install vim build-essential openssh-server net-tools git-all
+sudo apt install vim build-essential openssh-server net-tools git-all ninja-build
 sudo snap install --classic code # Visual Studio Code
 
 cat /proc/driver/nvidia/version
