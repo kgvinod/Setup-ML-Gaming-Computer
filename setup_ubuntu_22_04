@@ -7,6 +7,9 @@ sudo ubuntu-drivers list
 sudo ubuntu-drivers install
 sudo apt-get install linux-headers-$(uname -r)
 sudo apt install nvidia-cuda-toolkit nvidia-cuda-toolkit-gcc
+# Alternatively, install latest from Nvidia site:
+# https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+# https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
 nvcc --version
 
 sudo apt-get install glmark2
